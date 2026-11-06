@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Goals | Digital Detox</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="goals">
+  <div class="app">
+    <aside class="sidebar">
+      <a class="brand" href="index.html">◉ <strong>Digital Detox</strong></a>
+      <nav>
+        <a class="nav-link" href="index.html" data-nav="home">⌂ <span data-i18n="home">الرئيسية</span></a>
+        <a class="nav-link" href="tracker.html" data-nav="tracker">◷ <span data-i18n="tracker">وقت الشاشة</span></a>
+        <a class="nav-link" href="goals.html" data-nav="goals">◎ <span data-i18n="goals">الأهداف</span></a>
+        <a class="nav-link" href="challenges.html" data-nav="challenges">✦ <span data-i18n="challenges">التحديات</span></a>
+        <a class="nav-link" href="statistics.html" data-nav="statistics">▥ <span data-i18n="statistics">الإحصائيات</span></a>
+      </nav>
+      <p class="sidebar-note" data-i18n="sidebarNote">خطوات صغيرة بتعمل فرق كبير.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow" data-i18n="goalLabel">هدفك</p>
+          <h1 data-i18n="goalsTitle">الأهداف اليومية</h1>
+        </div>
+        <button class="language-button" id="languageButton">English</button>
+      </header>
+
+      <section class="card">
+        <h2 data-i18n="setGoal">حدد هدف يومي</h2>
+        <p class="muted" data-i18n="goalDescription">اختار أقصى وقت للشاشة مناسب ليك كل يوم.</p>
+        <form id="goalForm">
+          <label for="goalInput" data-i18n="goalHoursLabel">الهدف بالساعات</label>
+          <div class="form-row">
+            <input id="goalInput" type="number" min="0.5" max="24" step="0.5" required>
+            <button type="submit" data-i18n="saveGoal">احفظ الهدف</button>
+          </div>
+        </form>
+        <p class="message" id="goalMessage" aria-live="polite"></p>
+      </section>
+
+      <section class="card">
+        <h2 data-i18n="yourProgress">تقدمك النهارده</h2>
+        <p class="total-time"><span data-i18n="screenToday">وقت الشاشة النهارده</span>: <strong id="goalTime">٠ د</strong></p>
+        <p class="total-time"><span data-i18n="dailyGoal">هدفك اليومي</span>: <strong id="goalDisplay">٣ س</strong></p>
+        <div class="progress large"><span id="goalBar"></span></div>
+        <p class="muted" id="goalProgressText"></p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenges | Digital Detox</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="challenges">
+  <div class="app">
+    <aside class="sidebar">
+      <a class="brand" href="index.html">◉ <strong>Digital Detox</strong></a>
+      <nav>
+        <a class="nav-link" href="index.html" data-nav="home">⌂ <span data-i18n="home">الرئيسية</span></a>
+        <a class="nav-link" href="tracker.html" data-nav="tracker">◷ <span data-i18n="tracker">وقت الشاشة</span></a>
+        <a class="nav-link" href="goals.html" data-nav="goals">◎ <span data-i18n="goals">الأهداف</span></a>
+        <a class="nav-link" href="challenges.html" data-nav="challenges">✦ <span data-i18n="challenges">التحديات</span></a>
+        <a class="nav-link" href="statistics.html" data-nav="statistics">▥ <span data-i18n="statistics">الإحصائيات</span></a>
+      </nav>
+      <p class="sidebar-note" data-i18n="sidebarNote">خطوات صغيرة بتعمل فرق كبير.</p>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow" data-i18n="challengeLabel">خطوة صغيرة</p>
+          <h1 data-i18n="challengesTitle">التحديات</h1>
+        </div>
+        <button class="language-button" id="languageButton">English</button>
+      </header>
+
+      <section class="card challenge-card">
+        <div class="challenge-emoji">🌿</div>
+        <p class="eyebrow" data-i18n="todayChallenge">تحدي النهارده</p>
+        <h2 data-i18n="challengeTitle">خد استراحة ٣٠ دقيقة من الشاشات</h2>
+        <p class="muted" data-i18n="challengeText">ابعد عن موبايلك شوية واستمتع بوقت من غير شاشة.</p>
+        <button id="challengeButton" type="button" data-i18n="markComplete">خلصت التحدي</button>
+        <p class="message" id="challengeMessage" aria-live="polite"></p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
